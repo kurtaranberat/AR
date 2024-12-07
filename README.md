@@ -12,7 +12,7 @@ Projeye ait tüm dokümanlar (analiz, tasarım, vb.) `docs` klasörü altında b
 
 ## Projeler
 
-### 1. Oyun-1 (3D AR Oyunu)
+### 1. Oyun-1( 4 adet oyun var )  (3D AR Oyunu)
 
 #### Three.js 3D Render Sistemi
 Three.js tabanlı projemiz aşağıdaki temel özellikleri içermektedir:
@@ -25,7 +25,7 @@ Three.js tabanlı projemiz aşağıdaki temel özellikleri içermektedir:
 
 [Detaylı teknik doküman için tıklayın](./docs/technical/threejs-system.md)
 
-### 2. Oyun-2 (2D AR Oyunu)
+### 2. Oyun-2(4 adet oyun var )  (2D AR Oyunu)
 - 2D grafik render sistemi
 - React Native Canvas ile çizim işlemleri
 - SVG ve vektör tabanlı grafikler
