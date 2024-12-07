@@ -52,6 +52,11 @@ npm start
 yarn start
 ```
 
+## Proje Yönetimi
+
+Projenin detaylı görev takibi ve zaman planlaması için Trello board'umuzu ziyaret edebilirsiniz:
+[Trello Board](https://trello.com/invite/b/675420b2875912d0b398738b/ATTI5f77c03599dae9242dcad8bb8d0d6b43B33E9B11/guncelkonular)
+
 ## Lisans
 
 Bu projeler 0BSD lisansı altında lisanslanmıştır.
