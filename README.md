@@ -14,14 +14,12 @@ Projeye ait tüm dokümanlar (analiz, tasarım, vb.) `docs` klasörü altında b
 
 ### 1. Oyun-1 (3D AR Oyunu)
 
-#### Three.js 3D Render Sistemi
-Three.js tabanlı projemiz aşağıdaki temel özellikleri içermektedir:
-
-- **Scene Management**: Gelişmiş sahne yönetimi ve kamera kontrolü
-- **3D Model İşlemleri**: GLTF/GLB/FBX format desteği ve animasyon sistemi
-- **Render Pipeline**: WebGL 2.0 tabanlı performans optimizasyonu
-- **Interaction System**: Gelişmiş etkileşim ve fizik motoru entegrasyonu
-- **AR Integration**: AR Foundation ile gerçek dünya entegrasyonu
+#### Teknik Özellikler
+- 3D sahne ve kamera yönetimi
+- 3D model ve animasyon desteği
+- Yüksek performanslı grafik işleme
+- Fizik motoru ve etkileşim sistemi
+- Artırılmış gerçeklik özellikleri
 
 [Detaylı teknik doküman için tıklayın](./docs/technical/threejs-system.md)
 
