@@ -5,14 +5,14 @@ Bu repository, React Native ve Expo kullanılarak geliştirilmiş iki farklı Ar
  [Oyun Tanıtım Videosu](https://youtube.com/shorts/yuTmxGDcQ-A?feature=share)
 
 ## Dokümanlar
-Projeye ait tüm dokümanlar (analiz, tasarım, vb.) `docs` klasörü altında bulunmaktadır.
+Projeye ait tüm dokümanlar (analiz, tasarım, vb.) `docs` klasörü altında bulunmaktadır.( Beyaz arkaplan ile baksanız daha iyi olur :D)
 
 ## Proje Yönetimi
 📋 [Trello Board - Güncel Konular](https://trello.com/b/Rq6sW60f/guncelkonular)
 
 ## Projeler
 
-### 1. Oyun-1 (3D AR Oyunu)
+###  Oyun-1( 4 adet oyun var )  (3D AR Oyunu)
 
 #### Teknik Özellikler
 - 3D sahne ve kamera yönetimi
@@ -23,7 +23,7 @@ Projeye ait tüm dokümanlar (analiz, tasarım, vb.) `docs` klasörü altında b
 
 [Detaylı teknik doküman için tıklayın](./docs/technical/threejs-system.md)
 
-### 2. Oyun-2 (2D AR Oyunu)
+###  Oyun-2(4 adet oyun var )  (2D AR Oyunu)
 - 2D grafik render sistemi
 - React Native Canvas ile çizim işlemleri
 - SVG ve vektör tabanlı grafikler
@@ -39,26 +39,26 @@ Projeye ait tüm dokümanlar (analiz, tasarım, vb.) `docs` klasörü altında b
 
 ## Hızlı Başlangıç
 
-1. Repository'yi klonlayın:
+ Repository'yi klonlayın:
 ```bash
 git clone [proje-url]
 ```
 
-2. İstediğiniz projenin dizinine gidin:
+ İstediğiniz projenin dizinine gidin:
 ```bash
 cd oyun-1
 # veya
 cd oyun-2
 ```
 
-3. Bağımlılıkları yükleyin:
+ Bağımlılıkları yükleyin:
 ```bash
 npm install
 # veya
 yarn install
 ```
 
-4. Projeyi başlatın:
+ Projeyi başlatın:
 ```bash
 npm start
 # veya
@@ -70,7 +70,7 @@ yarn start
 Projenin detaylı görev takibi ve zaman planlaması için Trello board'umuzu ziyaret edebilirsiniz:
 [Trello Board](https://trello.com/b/Rq6sW60f/guncelkonular)
 
-### 7. Lisans ve Katkıda Bulunma
+###  Lisans ve Katkıda Bulunma
 
 Bu proje MIT lisansı altında lisanslanmıştır. Katkıda bulunmak için lütfen:
 1. Fork yapın
