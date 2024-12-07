@@ -5,7 +5,7 @@ Bu repository, React Native ve Expo kullanılarak geliştirilmiş iki farklı Ar
  [Oyun Tanıtım Videosu](https://youtube.com/shorts/yuTmxGDcQ-A?feature=share)
 
 ## Dokümanlar
-Projeye ait tüm dokümanlar (analiz, tasarım, vb.) `docs` klasörü altında bulunmaktadır.
+Projeye ait tüm dokümanlar (analiz, tasarım, vb.) `docs` klasörü altında bulunmaktadır.( Beyaz arkaplan ile baksanız daha iyi olur :D)
 
 ## Proje Yönetimi
 📋 [Trello Board - Güncel Konular](https://trello.com/b/Rq6sW60f/guncelkonular)
