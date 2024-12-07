@@ -1,0 +1,91 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<mxfile host="Electron" modified="2024-01-07T12:00:00.000Z" agent="5.0" version="14.6.13" type="device">
+  <diagram id="sequence-diagram" name="Sequence Diagram">
+    <mxGraphModel dx="1422" dy="798" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="1100" pageHeight="1169">
+      <root>
+        <mxCell id="0"/>
+        <mxCell id="1" parent="0"/>
+        <!-- Lifelines -->
+        <mxCell id="2" value="User" style="shape=umlLifeline;participant=umlActor;perimeter=lifelinePerimeter;whiteSpace=wrap;html=1;container=1;collapsible=0;recursiveResize=0;verticalAlign=top;spacingTop=36;outlineConnect=0;" vertex="1" parent="1">
+          <mxGeometry x="80" y="80" width="20" height="600" as="geometry"/>
+        </mxCell>
+        <mxCell id="3" value="AR App" style="shape=umlLifeline;perimeter=lifelinePerimeter;whiteSpace=wrap;html=1;container=1;collapsible=0;recursiveResize=0;outlineConnect=0;" vertex="1" parent="1">
+          <mxGeometry x="200" y="80" width="100" height="600" as="geometry"/>
+        </mxCell>
+        <mxCell id="4" value="Camera&#xa;Manager" style="shape=umlLifeline;perimeter=lifelinePerimeter;whiteSpace=wrap;html=1;container=1;collapsible=0;recursiveResize=0;outlineConnect=0;" vertex="1" parent="1">
+          <mxGeometry x="360" y="80" width="100" height="600" as="geometry"/>
+        </mxCell>
+        <mxCell id="5" value="Marker&#xa;Detector" style="shape=umlLifeline;perimeter=lifelinePerimeter;whiteSpace=wrap;html=1;container=1;collapsible=0;recursiveResize=0;outlineConnect=0;" vertex="1" parent="1">
+          <mxGeometry x="520" y="80" width="100" height="600" as="geometry"/>
+        </mxCell>
+        <mxCell id="6" value="Scene&#xa;Manager" style="shape=umlLifeline;perimeter=lifelinePerimeter;whiteSpace=wrap;html=1;container=1;collapsible=0;recursiveResize=0;outlineConnect=0;" vertex="1" parent="1">
+          <mxGeometry x="680" y="80" width="100" height="600" as="geometry"/>
+        </mxCell>
+        <mxCell id="7" value="Renderer" style="shape=umlLifeline;perimeter=lifelinePerimeter;whiteSpace=wrap;html=1;container=1;collapsible=0;recursiveResize=0;outlineConnect=0;" vertex="1" parent="1">
+          <mxGeometry x="840" y="80" width="100" height="600" as="geometry"/>
+        </mxCell>
+        <!-- Activation Boxes -->
+        <mxCell id="8" value="" style="html=1;points=[];perimeter=orthogonalPerimeter;" vertex="1" parent="1">
+          <mxGeometry x="245" y="160" width="10" height="480" as="geometry"/>
+        </mxCell>
+        <mxCell id="9" value="" style="html=1;points=[];perimeter=orthogonalPerimeter;" vertex="1" parent="1">
+          <mxGeometry x="405" y="180" width="10" height="80" as="geometry"/>
+        </mxCell>
+        <mxCell id="10" value="" style="html=1;points=[];perimeter=orthogonalPerimeter;" vertex="1" parent="1">
+          <mxGeometry x="565" y="280" width="10" height="80" as="geometry"/>
+        </mxCell>
+        <mxCell id="11" value="" style="html=1;points=[];perimeter=orthogonalPerimeter;" vertex="1" parent="1">
+          <mxGeometry x="725" y="380" width="10" height="80" as="geometry"/>
+        </mxCell>
+        <mxCell id="12" value="" style="html=1;points=[];perimeter=orthogonalPerimeter;" vertex="1" parent="1">
+          <mxGeometry x="885" y="480" width="10" height="80" as="geometry"/>
+        </mxCell>
+        <!-- Messages -->
+        <mxCell id="13" value="1: Start AR Session" style="html=1;verticalAlign=bottom;startArrow=none;endArrow=block;startSize=8;rounded=0;" edge="1" parent="1" target="8">
+          <mxGeometry relative="1" as="geometry">
+            <mxPoint x="90" y="160" as="sourcePoint"/>
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="14" value="2: Initialize Camera" style="html=1;verticalAlign=bottom;endArrow=block;rounded=0;" edge="1" parent="1" source="8" target="9">
+          <mxGeometry relative="1" as="geometry"/>
+        </mxCell>
+        <mxCell id="15" value="3: Camera Ready" style="html=1;verticalAlign=bottom;endArrow=open;dashed=1;endSize=8;rounded=0;" edge="1" parent="1" source="9" target="8">
+          <mxGeometry relative="1" as="geometry"/>
+        </mxCell>
+        <!-- Loop Frame -->
+        <mxCell id="16" value="loop" style="shape=umlFrame;whiteSpace=wrap;html=1;width=50;height=20;" vertex="1" parent="1">
+          <mxGeometry x="40" y="280" width="920" height="320" as="geometry"/>
+        </mxCell>
+        <mxCell id="17" value="4: Get Frame" style="html=1;verticalAlign=bottom;endArrow=block;rounded=0;" edge="1" parent="1" source="8" target="9">
+          <mxGeometry relative="1" as="geometry">
+            <mxPoint x="260" y="300" as="sourcePoint"/>
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="18" value="5: Detect Markers" style="html=1;verticalAlign=bottom;endArrow=block;rounded=0;" edge="1" parent="1" source="8" target="10">
+          <mxGeometry relative="1" as="geometry"/>
+        </mxCell>
+        <mxCell id="19" value="6: Update Scene" style="html=1;verticalAlign=bottom;endArrow=block;rounded=0;" edge="1" parent="1" source="8" target="11">
+          <mxGeometry relative="1" as="geometry"/>
+        </mxCell>
+        <mxCell id="20" value="7: Render Frame" style="html=1;verticalAlign=bottom;endArrow=block;rounded=0;" edge="1" parent="1" source="8" target="12">
+          <mxGeometry relative="1" as="geometry"/>
+        </mxCell>
+        <!-- Return Messages -->
+        <mxCell id="21" value="Frame Data" style="html=1;verticalAlign=bottom;endArrow=open;dashed=1;endSize=8;rounded=0;" edge="1" parent="1" source="9" target="8">
+          <mxGeometry relative="1" as="geometry">
+            <mxPoint x="400" y="340" as="sourcePoint"/>
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="22" value="Marker Positions" style="html=1;verticalAlign=bottom;endArrow=open;dashed=1;endSize=8;rounded=0;" edge="1" parent="1" source="10" target="8">
+          <mxGeometry relative="1" as="geometry"/>
+        </mxCell>
+        <mxCell id="23" value="Scene Updated" style="html=1;verticalAlign=bottom;endArrow=open;dashed=1;endSize=8;rounded=0;" edge="1" parent="1" source="11" target="8">
+          <mxGeometry relative="1" as="geometry"/>
+        </mxCell>
+        <mxCell id="24" value="Frame Rendered" style="html=1;verticalAlign=bottom;endArrow=open;dashed=1;endSize=8;rounded=0;" edge="1" parent="1" source="12" target="8">
+          <mxGeometry relative="1" as="geometry"/>
+        </mxCell>
+      </root>
+    </mxGraphModel>
+  </diagram>
+</mxfile>

@@ -1,0 +1,85 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<mxfile host="Electron" modified="2024-01-07T12:00:00.000Z" agent="5.0" version="14.6.13" type="device">
+  <diagram id="use-case-diagram" name="Use Case">
+    <mxGraphModel dx="1422" dy="798" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="827" pageHeight="1169">
+      <root>
+        <mxCell id="0"/>
+        <mxCell id="1" parent="0"/>
+        <!-- Actors -->
+        <mxCell id="2" value="End User" style="shape=umlActor;verticalLabelPosition=bottom;verticalAlign=top;html=1;" vertex="1" parent="1">
+          <mxGeometry x="90" y="280" width="30" height="60" as="geometry"/>
+        </mxCell>
+        <mxCell id="3" value="Developer" style="shape=umlActor;verticalLabelPosition=bottom;verticalAlign=top;html=1;" vertex="1" parent="1">
+          <mxGeometry x="90" y="480" width="30" height="60" as="geometry"/>
+        </mxCell>
+        <mxCell id="4" value="AR System" style="shape=umlActor;verticalLabelPosition=bottom;verticalAlign=top;html=1;" vertex="1" parent="1">
+          <mxGeometry x="700" y="280" width="30" height="60" as="geometry"/>
+        </mxCell>
+        <!-- System Boundary -->
+        <mxCell id="5" value="AR Application" style="shape=rect;html=1;verticalAlign=top;fontStyle=1;whiteSpace=wrap;align=center;" vertex="1" parent="1">
+          <mxGeometry x="200" y="120" width="440" height="480" as="geometry"/>
+        </mxCell>
+        <!-- Use Cases -->
+        <mxCell id="6" value="View AR Content" style="ellipse;whiteSpace=wrap;html=1;" vertex="1" parent="1">
+          <mxGeometry x="280" y="160" width="140" height="70" as="geometry"/>
+        </mxCell>
+        <mxCell id="7" value="Scan Markers" style="ellipse;whiteSpace=wrap;html=1;" vertex="1" parent="1">
+          <mxGeometry x="280" y="260" width="140" height="70" as="geometry"/>
+        </mxCell>
+        <mxCell id="8" value="Interact with&#xa;AR Objects" style="ellipse;whiteSpace=wrap;html=1;" vertex="1" parent="1">
+          <mxGeometry x="280" y="360" width="140" height="70" as="geometry"/>
+        </mxCell>
+        <mxCell id="9" value="Create AR Content" style="ellipse;whiteSpace=wrap;html=1;" vertex="1" parent="1">
+          <mxGeometry x="280" y="460" width="140" height="70" as="geometry"/>
+        </mxCell>
+        <mxCell id="10" value="Manage Markers" style="ellipse;whiteSpace=wrap;html=1;" vertex="1" parent="1">
+          <mxGeometry x="460" y="460" width="140" height="70" as="geometry"/>
+        </mxCell>
+        <mxCell id="11" value="Process Markers" style="ellipse;whiteSpace=wrap;html=1;" vertex="1" parent="1">
+          <mxGeometry x="460" y="160" width="140" height="70" as="geometry"/>
+        </mxCell>
+        <mxCell id="12" value="Render 3D&#xa;Objects" style="ellipse;whiteSpace=wrap;html=1;" vertex="1" parent="1">
+          <mxGeometry x="460" y="260" width="140" height="70" as="geometry"/>
+        </mxCell>
+        <mxCell id="13" value="Track User&#xa;Movement" style="ellipse;whiteSpace=wrap;html=1;" vertex="1" parent="1">
+          <mxGeometry x="460" y="360" width="140" height="70" as="geometry"/>
+        </mxCell>
+        <!-- Include/Extend Relationships -->
+        <mxCell id="14" value="&lt;&lt;include&gt;&gt;" style="endArrow=open;endSize=12;dashed=1;html=1;" edge="1" parent="1" source="6" target="11">
+          <mxGeometry width="160" relative="1" as="geometry"/>
+        </mxCell>
+        <mxCell id="15" value="&lt;&lt;include&gt;&gt;" style="endArrow=open;endSize=12;dashed=1;html=1;" edge="1" parent="1" source="7" target="11">
+          <mxGeometry width="160" relative="1" as="geometry"/>
+        </mxCell>
+        <mxCell id="16" value="&lt;&lt;include&gt;&gt;" style="endArrow=open;endSize=12;dashed=1;html=1;" edge="1" parent="1" source="6" target="12">
+          <mxGeometry width="160" relative="1" as="geometry"/>
+        </mxCell>
+        <!-- Actor Connections -->
+        <mxCell id="17" value="" style="endArrow=none;html=1;" edge="1" parent="1" source="2" target="6">
+          <mxGeometry width="50" height="50" relative="1" as="geometry"/>
+        </mxCell>
+        <mxCell id="18" value="" style="endArrow=none;html=1;" edge="1" parent="1" source="2" target="7">
+          <mxGeometry width="50" height="50" relative="1" as="geometry"/>
+        </mxCell>
+        <mxCell id="19" value="" style="endArrow=none;html=1;" edge="1" parent="1" source="2" target="8">
+          <mxGeometry width="50" height="50" relative="1" as="geometry"/>
+        </mxCell>
+        <mxCell id="20" value="" style="endArrow=none;html=1;" edge="1" parent="1" source="3" target="9">
+          <mxGeometry width="50" height="50" relative="1" as="geometry"/>
+        </mxCell>
+        <mxCell id="21" value="" style="endArrow=none;html=1;" edge="1" parent="1" source="3" target="10">
+          <mxGeometry width="50" height="50" relative="1" as="geometry"/>
+        </mxCell>
+        <mxCell id="22" value="" style="endArrow=none;html=1;" edge="1" parent="1" source="4" target="11">
+          <mxGeometry width="50" height="50" relative="1" as="geometry"/>
+        </mxCell>
+        <mxCell id="23" value="" style="endArrow=none;html=1;" edge="1" parent="1" source="4" target="12">
+          <mxGeometry width="50" height="50" relative="1" as="geometry"/>
+        </mxCell>
+        <mxCell id="24" value="" style="endArrow=none;html=1;" edge="1" parent="1" source="4" target="13">
+          <mxGeometry width="50" height="50" relative="1" as="geometry"/>
+        </mxCell>
+      </root>
+    </mxGraphModel>
+  </diagram>
+</mxfile>

@@ -1,0 +1,73 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<mxfile host="Electron" modified="2024-01-07T12:00:00.000Z" agent="5.0" version="14.6.13" type="device">
+  <diagram id="class-diagram" name="Class Diagram">
+    <mxGraphModel dx="1422" dy="798" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="827" pageHeight="1169">
+      <root>
+        <mxCell id="0"/>
+        <mxCell id="1" parent="0"/>
+        <!-- ARSystem Class -->
+        <mxCell id="2" value="ARSystem" style="swimlane;fontStyle=1;align=center;verticalAlign=top;childLayout=stackLayout;horizontal=1;startSize=26;horizontalStack=0;resizeParent=1;resizeParentMax=0;resizeLast=0;collapsible=1;marginBottom=0;" vertex="1" parent="1">
+          <mxGeometry x="320" y="80" width="200" height="200" as="geometry"/>
+        </mxCell>
+        <mxCell id="3" value="- camera: Camera&#xa;- markerDetector: MarkerDetector&#xa;- renderer: Renderer&#xa;- sceneManager: SceneManager&#xa;- userInterface: UIManager" style="text;strokeColor=none;fillColor=none;align=left;verticalAlign=top;spacingLeft=4;spacingRight=4;overflow=hidden;rotatable=0;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;" vertex="1" parent="2">
+          <mxGeometry y="26" width="200" height="84" as="geometry"/>
+        </mxCell>
+        <mxCell id="4" value="" style="line;strokeWidth=1;fillColor=none;align=left;verticalAlign=middle;spacingTop=-1;spacingLeft=3;spacingRight=3;rotatable=0;labelPosition=right;points=[];portConstraint=eastwest;" vertex="1" parent="2">
+          <mxGeometry y="110" width="200" height="8" as="geometry"/>
+        </mxCell>
+        <mxCell id="5" value="+ initialize(): void&#xa;+ processFrame(): void&#xa;+ updateScene(): void&#xa;+ handleUserInput(): void&#xa;+ shutdown(): void" style="text;strokeColor=none;fillColor=none;align=left;verticalAlign=top;spacingLeft=4;spacingRight=4;overflow=hidden;rotatable=0;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;" vertex="1" parent="2">
+          <mxGeometry y="118" width="200" height="82" as="geometry"/>
+        </mxCell>
+        <!-- MarkerDetector Class -->
+        <mxCell id="6" value="MarkerDetector" style="swimlane;fontStyle=1;align=center;verticalAlign=top;childLayout=stackLayout;horizontal=1;startSize=26;horizontalStack=0;resizeParent=1;resizeParentMax=0;resizeLast=0;collapsible=1;marginBottom=0;" vertex="1" parent="1">
+          <mxGeometry x="40" y="320" width="200" height="180" as="geometry"/>
+        </mxCell>
+        <mxCell id="7" value="- patterns: List&lt;MarkerPattern&gt;&#xa;- detector: MarkerDetectionAlgorithm&#xa;- calibration: CameraCalibration" style="text;strokeColor=none;fillColor=none;align=left;verticalAlign=top;spacingLeft=4;spacingRight=4;overflow=hidden;rotatable=0;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;" vertex="1" parent="6">
+          <mxGeometry y="26" width="200" height="64" as="geometry"/>
+        </mxCell>
+        <mxCell id="8" value="" style="line;strokeWidth=1;fillColor=none;align=left;verticalAlign=middle;spacingTop=-1;spacingLeft=3;spacingRight=3;rotatable=0;labelPosition=right;points=[];portConstraint=eastwest;" vertex="1" parent="6">
+          <mxGeometry y="90" width="200" height="8" as="geometry"/>
+        </mxCell>
+        <mxCell id="9" value="+ detectMarkers(frame: Image): List&#xa;+ calculatePose(): Transform&#xa;+ addPattern(pattern: MarkerPattern)&#xa;+ removePattern(id: string)&#xa;+ updateCalibration()" style="text;strokeColor=none;fillColor=none;align=left;verticalAlign=top;spacingLeft=4;spacingRight=4;overflow=hidden;rotatable=0;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;" vertex="1" parent="6">
+          <mxGeometry y="98" width="200" height="82" as="geometry"/>
+        </mxCell>
+        <!-- Renderer Class -->
+        <mxCell id="10" value="Renderer" style="swimlane;fontStyle=1;align=center;verticalAlign=top;childLayout=stackLayout;horizontal=1;startSize=26;horizontalStack=0;resizeParent=1;resizeParentMax=0;resizeLast=0;collapsible=1;marginBottom=0;" vertex="1" parent="1">
+          <mxGeometry x="600" y="320" width="200" height="200" as="geometry"/>
+        </mxCell>
+        <mxCell id="11" value="- scene: Scene&#xa;- camera: Camera&#xa;- shader: Shader&#xa;- lights: List&lt;Light&gt;&#xa;- materials: List&lt;Material&gt;" style="text;strokeColor=none;fillColor=none;align=left;verticalAlign=top;spacingLeft=4;spacingRight=4;overflow=hidden;rotatable=0;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;" vertex="1" parent="10">
+          <mxGeometry y="26" width="200" height="84" as="geometry"/>
+        </mxCell>
+        <mxCell id="12" value="" style="line;strokeWidth=1;fillColor=none;align=left;verticalAlign=middle;spacingTop=-1;spacingLeft=3;spacingRight=3;rotatable=0;labelPosition=right;points=[];portConstraint=eastwest;" vertex="1" parent="10">
+          <mxGeometry y="110" width="200" height="8" as="geometry"/>
+        </mxCell>
+        <mxCell id="13" value="+ render(): void&#xa;+ addObject(object: 3DObject): void&#xa;+ removeObject(id: string): void&#xa;+ updateLighting(): void&#xa;+ setShader(shader: Shader)" style="text;strokeColor=none;fillColor=none;align=left;verticalAlign=top;spacingLeft=4;spacingRight=4;overflow=hidden;rotatable=0;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;" vertex="1" parent="10">
+          <mxGeometry y="118" width="200" height="82" as="geometry"/>
+        </mxCell>
+        <!-- SceneManager Class -->
+        <mxCell id="14" value="SceneManager" style="swimlane;fontStyle=1;align=center;verticalAlign=top;childLayout=stackLayout;horizontal=1;startSize=26;horizontalStack=0;resizeParent=1;resizeParentMax=0;resizeLast=0;collapsible=1;marginBottom=0;" vertex="1" parent="1">
+          <mxGeometry x="320" y="320" width="200" height="180" as="geometry"/>
+        </mxCell>
+        <mxCell id="15" value="- objects: Map&lt;string, 3DObject&gt;&#xa;- animations: List&lt;Animation&gt;&#xa;- interactions: List&lt;Interaction&gt;" style="text;strokeColor=none;fillColor=none;align=left;verticalAlign=top;spacingLeft=4;spacingRight=4;overflow=hidden;rotatable=0;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;" vertex="1" parent="14">
+          <mxGeometry y="26" width="200" height="64" as="geometry"/>
+        </mxCell>
+        <mxCell id="16" value="" style="line;strokeWidth=1;fillColor=none;align=left;verticalAlign=middle;spacingTop=-1;spacingLeft=3;spacingRight=3;rotatable=0;labelPosition=right;points=[];portConstraint=eastwest;" vertex="1" parent="14">
+          <mxGeometry y="90" width="200" height="8" as="geometry"/>
+        </mxCell>
+        <mxCell id="17" value="+ loadScene(scene: Scene): void&#xa;+ updateObjects(): void&#xa;+ handleInteraction(input: Input)&#xa;+ playAnimation(id: string)" style="text;strokeColor=none;fillColor=none;align=left;verticalAlign=top;spacingLeft=4;spacingRight=4;overflow=hidden;rotatable=0;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;" vertex="1" parent="14">
+          <mxGeometry y="98" width="200" height="82" as="geometry"/>
+        </mxCell>
+        <!-- Relationships -->
+        <mxCell id="18" value="" style="endArrow=diamondThin;endFill=1;endSize=24;html=1;" edge="1" parent="1" source="6" target="2">
+          <mxGeometry width="160" relative="1" as="geometry"/>
+        </mxCell>
+        <mxCell id="19" value="" style="endArrow=diamondThin;endFill=1;endSize=24;html=1;" edge="1" parent="1" source="10" target="2">
+          <mxGeometry width="160" relative="1" as="geometry"/>
+        </mxCell>
+        <mxCell id="20" value="" style="endArrow=diamondThin;endFill=1;endSize=24;html=1;" edge="1" parent="1" source="14" target="2">
+          <mxGeometry width="160" relative="1" as="geometry"/>
+        </mxCell>
+      </root>
+    </mxGraphModel>
+  </diagram>
+</mxfile>

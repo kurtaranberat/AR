@@ -1,0 +1,57 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<mxfile host="Electron" modified="2024-01-07T12:00:00.000Z" agent="5.0" version="14.6.13" type="device">
+  <diagram id="deployment-diagram" name="Deployment Diagram">
+    <mxGraphModel dx="1422" dy="798" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="827" pageHeight="1169">
+      <root>
+        <mxCell id="0"/>
+        <mxCell id="1" parent="0"/>
+        <!-- User Device Node -->
+        <mxCell id="2" value="&lt;&lt;device&gt;&gt;&#xa;Mobile Device / Tablet" style="verticalAlign=top;align=center;shape=cube;size=10;direction=south;fontStyle=1;html=1;" vertex="1" parent="1">
+          <mxGeometry x="140" y="80" width="200" height="280" as="geometry"/>
+        </mxCell>
+        <mxCell id="3" value="&lt;&lt;execution environment&gt;&gt;&#xa;Mobile OS (iOS/Android)" style="verticalAlign=top;align=center;shape=cube;size=10;direction=south;fontStyle=1;html=1;" vertex="1" parent="1">
+          <mxGeometry x="160" y="140" width="160" height="200" as="geometry"/>
+        </mxCell>
+        <!-- AR Application Components -->
+        <mxCell id="4" value="&lt;&lt;artifact&gt;&gt;&#xa;AR Application" style="verticalAlign=top;align=center;shape=cube;size=10;direction=south;fontStyle=1;html=1;" vertex="1" parent="1">
+          <mxGeometry x="180" y="200" width="120" height="120" as="geometry"/>
+        </mxCell>
+        <!-- Server Node -->
+        <mxCell id="5" value="&lt;&lt;device&gt;&gt;&#xa;Application Server" style="verticalAlign=top;align=center;shape=cube;size=10;direction=south;fontStyle=1;html=1;" vertex="1" parent="1">
+          <mxGeometry x="480" y="80" width="200" height="280" as="geometry"/>
+        </mxCell>
+        <mxCell id="6" value="&lt;&lt;execution environment&gt;&gt;&#xa;Server Runtime" style="verticalAlign=top;align=center;shape=cube;size=10;direction=south;fontStyle=1;html=1;" vertex="1" parent="1">
+          <mxGeometry x="500" y="140" width="160" height="200" as="geometry"/>
+        </mxCell>
+        <!-- Server Components -->
+        <mxCell id="7" value="&lt;&lt;artifact&gt;&gt;&#xa;Content Management&#xa;System" style="verticalAlign=top;align=center;shape=cube;size=10;direction=south;fontStyle=1;html=1;" vertex="1" parent="1">
+          <mxGeometry x="520" y="200" width="120" height="120" as="geometry"/>
+        </mxCell>
+        <!-- Database Node -->
+        <mxCell id="8" value="&lt;&lt;device&gt;&gt;&#xa;Database Server" style="verticalAlign=top;align=center;shape=cube;size=10;direction=south;fontStyle=1;html=1;" vertex="1" parent="1">
+          <mxGeometry x="480" y="400" width="200" height="160" as="geometry"/>
+        </mxCell>
+        <mxCell id="9" value="&lt;&lt;artifact&gt;&gt;&#xa;AR Content&#xa;Database" style="verticalAlign=top;align=center;shape=cube;size=10;direction=south;fontStyle=1;html=1;" vertex="1" parent="1">
+          <mxGeometry x="520" y="460" width="120" height="80" as="geometry"/>
+        </mxCell>
+        <!-- Cloud Storage Node -->
+        <mxCell id="10" value="&lt;&lt;device&gt;&gt;&#xa;Cloud Storage" style="verticalAlign=top;align=center;shape=cube;size=10;direction=south;fontStyle=1;html=1;" vertex="1" parent="1">
+          <mxGeometry x="140" y="400" width="200" height="160" as="geometry"/>
+        </mxCell>
+        <mxCell id="11" value="&lt;&lt;artifact&gt;&gt;&#xa;3D Models &amp;&#xa;Assets" style="verticalAlign=top;align=center;shape=cube;size=10;direction=south;fontStyle=1;html=1;" vertex="1" parent="1">
+          <mxGeometry x="180" y="460" width="120" height="80" as="geometry"/>
+        </mxCell>
+        <!-- Connections -->
+        <mxCell id="12" value="HTTPS" style="endArrow=none;html=1;rounded=0;exitX=1;exitY=0.5;exitDx=0;exitDy=0;entryX=0;entryY=0.5;entryDx=0;entryDy=0;" edge="1" parent="1" source="2" target="5">
+          <mxGeometry relative="1" as="geometry"/>
+        </mxCell>
+        <mxCell id="13" value="TCP/IP" style="endArrow=none;html=1;rounded=0;exitX=0.5;exitY=1;exitDx=0;exitDy=0;entryX=0.5;entryY=0;entryDx=0;entryDy=0;" edge="1" parent="1" source="5" target="8">
+          <mxGeometry relative="1" as="geometry"/>
+        </mxCell>
+        <mxCell id="14" value="S3/Blob Storage API" style="endArrow=none;html=1;rounded=0;exitX=0.5;exitY=1;exitDx=0;exitDy=0;entryX=0.5;entryY=0;entryDx=0;entryDy=0;" edge="1" parent="1" source="2" target="10">
+          <mxGeometry relative="1" as="geometry"/>
+        </mxCell>
+      </root>
+    </mxGraphModel>
+  </diagram>
+</mxfile>
