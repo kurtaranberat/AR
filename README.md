@@ -29,6 +29,9 @@ Projeye ait tüm dokümanlar (analiz, tasarım, vb.) `docs` klasörü altında b
 - SVG ve vektör tabanlı grafikler
 - [Detaylı bilgi için tıklayın](./oyun-2/README.md)
 
+## Tanıtım Web Sitesi
+Projenin tanıtım web sitesine [buradan](https://kurtaranberat.github.io/AR/) ulaşabilirsiniz.
+
 ## Genel Gereksinimler
 
 - Node.js
