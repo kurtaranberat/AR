@@ -67,6 +67,8 @@ npm start
 # veya
 yarn start
 ```
+## İlgili Dökümanlar 
+https://docs.google.com/spreadsheets/d/1k5qBHgybbe_91glUURUPsX1VfjeNIP51/edit?rtpof=true&gid=1027327986#gid=1027327986
 
 ## Proje Yönetimi
 
