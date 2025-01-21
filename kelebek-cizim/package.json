@@ -1,0 +1,30 @@
+{
+  "name": "kelebek-cizim",
+  "version": "1.0.0",
+  "description": "Kelebek Çizim Oyunu",
+  "main": "node_modules/expo/AppEntry.js",
+  "scripts": {
+    "start": "expo start",
+    "android": "expo start --android",
+    "ios": "expo start --ios",
+    "web": "expo start --web"
+  },
+  "dependencies": {
+    "expo": "~48.0.18",
+    "expo-status-bar": "~1.4.4",
+    "react": "18.2.0",
+    "react-native": "0.71.8",
+    "@react-three/fiber": "^8.0.0",
+    "@react-three/drei": "^9.0.0",
+    "three": "^0.145.0",
+    "expo-gl": "~12.4.0",
+    "expo-three": "7.0.0",
+    "react-dom": "18.2.0",
+    "react-native-web": "~0.18.10"
+  },
+  "devDependencies": {
+    "@babel/core": "^7.20.0",
+    "babel-preset-expo": "^9.3.0"
+  },
+  "private": true
+}

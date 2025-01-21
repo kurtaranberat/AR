@@ -1,0 +1,64 @@
+# Dependencies
+node_modules/
+*/node_modules/
+gorev-dunyasi/node_modules/
+kelebek-cizim/node_modules/
+okuma-anlama/node_modules/
+sekil-tahmin-oyunu/node_modules/
+.pnp
+.pnp.js
+
+# Expo
+.expo/
+*/.expo/
+dist/
+*/dist/
+web-build/
+*/web-build/
+
+# Native
+*.orig.*
+*.jks
+*.p8
+*.p12
+*.key
+*.mobileprovision
+
+# Metro
+.metro-health-check*
+
+# Debug
+npm-debug.*
+yarn-debug.*
+yarn-error.*
+
+# macOS
+.DS_Store
+*.pem
+
+# Environment variables
+.env*.local
+.env
+
+# TypeScript
+*.tsbuildinfo
+
+# IDE
+.idea/
+.vscode/
+*.swp
+*.swo
+
+# Build outputs
+build/
+*/build/
+dist/
+*/dist/
+
+# Logs
+logs/
+*.log
+
+# Cache
+.cache/
+.temp/
