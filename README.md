@@ -49,7 +49,7 @@ git clone [proje-url]
 
  İstediğiniz projenin dizinine gidin:
 ```bash
-cd <çalıştırılacak_dosya>
+cd <çalıştırılacak_proje>
 ```
 
  Bağımlılıkları yükleyin:
