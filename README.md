@@ -49,9 +49,7 @@ git clone [proje-url]
 
  İstediğiniz projenin dizinine gidin:
 ```bash
-cd oyun-1
-# veya
-cd oyun-2
+cd <çalıştırılacak_dosya>
 ```
 
  Bağımlılıkları yükleyin:
