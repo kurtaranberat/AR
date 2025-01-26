@@ -1,87 +1,62 @@
-# AR Oyun Projesi
+# AR Oyun 1 - 3D Artırılmış Gerçeklik Oyunu
 
-Bu repository, React Native ve Expo kullanılarak geliştirilmiş iki farklı Artırılmış Gerçeklik (AR) oyun projesini içermektedir.
+Bu proje, React Native ve Expo kullanılarak geliştirilmiş bir 3D Artırılmış Gerçeklik (AR) oyunudur.
 
- [Oyun Tanıtım Videosu](https://youtube.com/shorts/yuTmxGDcQ-A?feature=share)
+## APK Build
 
-## Dokümanlar
-Projeye ait tüm dokümanlar (analiz, tasarım, vb.) `docs` klasörü altında bulunmaktadır.( Beyaz arkaplan ile baksanız daha iyi olur :D)
+En son APK build'ine [buradan](https://expo.dev/accounts/beratkurtaran/projects/SimpleProject/builds/552c1dc8-3ba6-4688-99ba-602326b328ea) ulaşabilirsiniz.
 
-## Proje Yönetimi
-📋 [Trello Board - Güncel Konular](https://trello.com/b/Rq6sW60f/guncelkonular)
+## Özellikler
 
-## Projeler
+- Three.js ile 3D grafik render
+- Artırılmış Gerçeklik deneyimi
+- React Navigation ile çoklu sayfa yönetimi
+- Modern ve kullanıcı dostu arayüz
 
-###  Oyun-1( 4 adet oyun var )  (3D AR Oyunu)
+## Teknolojiler
 
-#### Teknik Özellikler
-- 3D sahne ve kamera yönetimi
-- 3D model ve animasyon desteği
-- Yüksek performanslı grafik işleme
-- Fizik motoru ve etkileşim sistemi
-- Artırılmış gerçeklik özellikleri
+- React Native
+- Expo
+- Three.js
+- React Three Fiber
+- React Navigation
+- Expo GL
 
-[Detaylı teknik doküman için tıklayın](./docs/technical/threejs-system.md)
+## Kurulum
 
-###  Oyun-2(4 adet oyun var )  (2D AR Oyunu)
-- 2D grafik render sistemi
-- React Native Canvas ile çizim işlemleri
-- SVG ve vektör tabanlı grafikler
-- [Detaylı bilgi için tıklayın](./oyun-2/README.md)
-
-## Tanıtım Web Sitesi
-Projenin tanıtım web sitesine [buradan](https://kurtaranberat.github.io/AR/) ulaşabilirsiniz.
-
-## Genel Gereksinimler
-
-- Node.js
-- Expo CLI
-- React Native geliştirme ortamı
-- Android Studio (Android geliştirme için)
-- Xcode (iOS geliştirme için)
-
-## Hızlı Başlangıç
-
- Repository'yi klonlayın:
+1. Projeyi klonlayın:
 ```bash
 git clone [proje-url]
 ```
 
- İstediğiniz projenin dizinine gidin:
-```bash
-cd <çalıştırılacak_proje>
-```
-
- Bağımlılıkları yükleyin:
+2. Bağımlılıkları yükleyin:
 ```bash
 npm install
 # veya
 yarn install
 ```
 
- Projeyi başlatın:
+3. Projeyi başlatın:
 ```bash
 npm start
 # veya
 yarn start
 ```
-## İlgili Dökümanlar 
-https://docs.google.com/spreadsheets/d/1k5qBHgybbe_91glUURUPsX1VfjeNIP51/edit?rtpof=true&gid=1027327986#gid=1027327986
 
-## Proje Yönetimi
+## Gereksinimler
 
-Projenin detaylı görev takibi ve zaman planlaması için Trello board'umuzu ziyaret edebilirsiniz:
-[Trello Board](https://trello.com/b/Rq6sW60f/guncelkonular)
+- Node.js
+- Expo CLI
+- Android Studio (Android için)
+- Xcode (iOS için)
 
-###  Lisans ve Katkıda Bulunma
+## Kullanım
 
-Bu proje MIT lisansı altında lisanslanmıştır. Katkıda bulunmak için lütfen:
-1. Fork yapın
-2. Feature branch oluşturun
-3. Değişikliklerinizi commit edin
-4. Branch'inizi push edin
-5. Pull Request açın
+1. Expo uygulamasını mobil cihazınıza indirin
+2. Expo CLI üzerinden projeyi başlatın
+3. QR kodu mobil cihazınızla tarayın
+4. Uygulamayı kullanmaya başlayın
 
 ## Lisans
 
-Bu projeler 0BSD lisansı altında lisanslanmıştır.
+Bu proje 0BSD lisansı altında lisanslanmıştır.
